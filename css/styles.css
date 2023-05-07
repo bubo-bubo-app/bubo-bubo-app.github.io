@@ -1,4 +1,11 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+
 body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.main {
   width: 1000px;
   margin: 0 auto;
 }
@@ -24,4 +31,32 @@ body {
   width: 300px;
   height: 300px;
   border: solid 1px #eee;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.center {
+  width: 600px;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .main {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: inline-block;
+    margin: 50px 0;
+  }
+
+  .items {
+    width: 300px;
+    margin: 50px 0;
+    height: 100%;
+  }
 }
